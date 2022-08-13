@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Everyday"
+        android:icon="@drawable/home"
+        android:title="Everyday"/>
+    <item
+        android:id="@+id/navigation_Calendar"
+        android:icon="@drawable/icon"
+        android:title="Calendar"/>
+    <item
+        android:id="@+id/Them"
+        android:title=""/>
+
+    <item
+        android:id="@+id/navigation_Discover"
+        android:icon="@drawable/iconv"
+        android:title="Discover"/>
+
+    <item
+        android:id="@+id/navigation_Profile"
+        android:icon="@drawable/iconn"
+        android:title="Profile"/>
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linear_backgroud"
+    tools:context=".Function.DangKy_DangNhap.DangKyActivity">
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="80dp"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Tạo tài khoản tại đây."
+        android:layout_marginStart="46dp"
+        android:fontFamily="@font/ubuntu_medium"
+        app:layout_constraintTop_toBottomOf="@id/tvSignIn"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTenTK"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bogoc2"
+        android:drawableStart="@drawable/show"
+        android:drawablePadding="12dp"
+        android:hint="Nhập Tên Người Dùng "
+        android:paddingStart="16dp"
+        android:textColorHint="#545454"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+
+    <EditText
+        android:id="@+id/editEmailTk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="14dp"
+        android:paddingStart="16dp"
+        android:hint="Nhập Email "
+        android:drawableStart="@drawable/emil"
+        android:drawablePadding="12dp"
+        android:background="@drawable/bogoc2"
+        android:textColorHint="#545454"
+        android:inputType="textEmailSubject"
+        app:layout_constraintTop_toBottomOf="@id/editTenTK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+        android:id="@+id/editPasTk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bogoc2"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="12dp"
+        android:hint="Nhập Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textColorHint="#545454"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editEmailTk"
+        app:passwordToggleEnabled="true" />
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Đăng Ký"
+        android:textColor="#111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPasTk" />
+
+    <TextView
+        android:id="@+id/tvTVM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="Đã là thành viên hay chưa?"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@id/btnDangKy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDangKy" />
+
+    <TextView
+        android:id="@+id/tvDangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Login"
+        android:textSize="18sp"
+        android:fontFamily="@font/ubuntu_medium"
+        app:layout_constraintRight_toRightOf="@id/btnDangKy"
+        app:layout_constraintStart_toEndOf="@+id/tvTVM"
+        app:layout_constraintTop_toBottomOf="@id/btnDangKy" />
+</androidx.constraintlayout.widget.ConstraintLayout>

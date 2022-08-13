@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linear_backgroud"
+    tools:context=".Function.DangKy_DangNhap.DangNhapActivity">
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="80dp"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome back"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignIn" />
+
+    <EditText
+        android:id="@+id/editEmailTk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bogoc2"
+        android:drawableStart="@drawable/emil"
+        android:drawablePadding="12dp"
+        android:hint="Nhập Email "
+        android:inputType="textEmailSubject"
+        android:paddingStart="16dp"
+        android:radius="6dp"
+        android:textColorHint="#545454"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <EditText
+        android:id="@+id/editPasTk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="46dp"
+        android:layout_marginTop="14dp"
+        android:hint="Nhập Password"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="12dp"
+        android:paddingStart="16dp"
+        android:background="@drawable/bogoc2"
+        android:textColorHint="#545454"
+
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/editEmailTk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Đăng Nhập"
+        android:textColor="#111111"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPasTk" />
+
+    <TextView
+        android:id="@+id/tvTVM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thành viên mới?"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:fontFamily="@font/ubuntu_medium"
+        app:layout_constraintRight_toLeftOf="@id/tvDangKi"
+        app:layout_constraintTop_toBottomOf="@id/btnDangNhap"
+        app:layout_constraintLeft_toLeftOf="@id/btnDangNhap"/>
+
+    <TextView
+        android:id="@+id/tvDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign Up"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/tvTVM"
+        app:layout_constraintRight_toRightOf="@id/btnDangNhap"
+        app:layout_constraintTop_toBottomOf="@id/btnDangNhap" />
+</androidx.constraintlayout.widget.ConstraintLayout>

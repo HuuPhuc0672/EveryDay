@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_Date"
+        android:icon="@drawable/icon"
+        android:title="Everyday"/>
+    <item
+        android:id="@+id/navigation_Map"
+        android:src="@drawable/ic_person_pin_circle"
+        android:title="Everyday"/>
+    <item
+        android:id="@+id/navigation_Photo"
+        android:src="@drawable/ic_photo_size_select_actual"
+        android:title="Everyday"/>
+</menu>

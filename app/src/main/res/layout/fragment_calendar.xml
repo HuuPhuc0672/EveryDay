@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".Function.Fragment.CalendarFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_backgroud"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="110dp"
+                android:src="@drawable/hamburger" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Calendar"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:src="@drawable/icon2" />
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="375dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bogoc2"
+            android:drawableStart="@drawable/tim"
+            android:drawablePadding="10dp"
+            android:hint="Search through your posts"
+            android:paddingStart="80dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/Cale_Date"
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:gravity=""
+        android:layout_width="345dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="368dp"
+        android:background="@drawable/bogoc2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.021" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:textSize="28sp"
+                android:textColor="#82A0FA"
+                android:fontFamily="@font/ubuntu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu"
+                android:text="JAN"
+                android:textColor="#82A0FA"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:fontFamily="@font/ubuntu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A slow but sure start."/>
+            <TextView
+                android:textColor="#9999"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday, 11:30 AM"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    <ListView
+            android:id="@+id/liV_Date"
+            android:layout_width="408dp"
+            android:layout_height="201dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cale_Date"
+            app:layout_constraintVertical_bias="0.234" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
