@@ -40,7 +40,6 @@ public class ProfileFragment extends Fragment {
         llaFavourites = (LinearLayout) view.findViewById(R.id.lla_Favourites);
         llaMap = (LinearLayout) view.findViewById(R.id.lla_Map);
         llayVideo = (LinearLayout) view.findViewById(R.id.llay_Video);
-        llaStatics = (LinearLayout) view.findViewById(R.id.lla_Statics);
         llayImga = (LinearLayout) view.findViewById(R.id.llay_Imga);
         llayDrafts = (LinearLayout) view.findViewById(R.id.llay_Drafts);
         ///

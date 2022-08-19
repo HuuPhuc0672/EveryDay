@@ -6,50 +6,71 @@
     android:layout_height="match_parent"
     android:background="#f7f7f7"
     tools:context=".Function.Fragment.ProfileFragment">
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
 
-        android:orientation="vertical"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:background="@drawable/linear_backgroud"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="110dp"
-                android:src="@drawable/hamburger" />
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/ubuntu_bold"
-                android:text="Profile"
-                android:textColor="@color/white"
-                android:textSize="17sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="120dp"
-                android:src="@drawable/ic_settings" />
-        </LinearLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
-            android:layout_height="345dp">
+            android:layout_height="200dp"
+
+            android:background="@drawable/profile"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="110dp"
+                    android:src="@drawable/hamburger" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:src="@drawable/ic_settings" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="384dp"
+            android:layout_height="371dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="0.797">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -71,7 +92,7 @@
 
 
             <TextView
-                android:id="@+id/txtV_Name"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/ubuntu_bold"
@@ -85,9 +106,11 @@
                 app:layout_constraintVertical_bias="0.102" />
 
             <TextView
-                android:id="@+id/textView2"
+
+                android:id="@+id/textView3"
                 android:layout_width="269dp"
                 android:layout_height="33dp"
+                android:layout_marginBottom="124dp"
                 android:fontFamily="@font/ubuntu"
                 android:text="There is only one happiness in this life,
 to love and be loved."
@@ -96,9 +119,8 @@ to love and be loved."
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtV_Name"
-                app:layout_constraintVertical_bias="0.088" />
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -135,9 +157,9 @@ to love and be loved."
                 android:textColor="#666666"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintHorizontal_bias="0.127"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -149,9 +171,8 @@ to love and be loved."
                 android:textColor="#666666"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -175,194 +196,380 @@ to love and be loved."
                 android:textColor="#666666"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.871"
+                app:layout_constraintHorizontal_bias="0.841"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/lla_Favourites"
-        android:layout_width="103dp"
-        android:layout_height="103dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/bogoc2"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:orientation="vertical"
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/follow"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="302dp"
+        android:background="@color/white"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_favorite" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/ubuntu"
-            android:gravity="center"
-            android:text="Favourites"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lla_Map"
-        android:layout_width="103dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bogoc2"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintStart_toEndOf="@+id/lla_Favourites"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_person_pin_circle" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="16dp"
             android:fontFamily="@font/ubuntu"
-            android:gravity="center"
-            android:text="My Map"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-    </LinearLayout>
+            android:text="Follow"
+            android:textColor="#FA508C"
+            android:textSize="16sp" />
 
-    <LinearLayout
-        android:id="@+id/llay_Video"
-        android:layout_width="103dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="144dp"
-        android:background="@drawable/bogoc2"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toEndOf="@+id/llay_Imga"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_video" />
-
-        <TextView
+    </androidx.cardview.widget.CardView>
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/ubuntu"
-            android:gravity="center"
-            android:text="Videos"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-    </LinearLayout>
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="1.0">
 
-    <LinearLayout
-        android:id="@+id/lla_Statics"
-        android:layout_width="103dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bogoc2"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
-        app:layout_constraintStart_toEndOf="@+id/lla_Map"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_insert_chart" />
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.032">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/ubuntu"
-            android:gravity="center"
-            android:text="Statics "
-            android:textColor="#666666"
-            android:textSize="14sp" />
-    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lla_Favourites"
+                        android:layout_width="103dp"
+                        android:layout_height="103dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bogoc2"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/llay_Imga"
-        android:layout_width="103dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="144dp"
-        android:background="@drawable/bogoc2"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_favorite" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_photo_size_select_actual" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:gravity="center"
+                            android:text="Favourites"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/ubuntu"
-            android:gravity="center"
-            android:text="Photos "
-            android:textColor="#666666"
-            android:textSize="14sp" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/llay_Drafts"
-        android:layout_width="103dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/bogoc2"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toEndOf="@+id/llay_Video"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+                    </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drafts" />
+                    <LinearLayout
+                        android:id="@+id/lla_Map"
+                        android:layout_width="103dp"
+                        android:layout_height="103dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bogoc2"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/ubuntu"
-            android:gravity="center"
-            android:text="Drafts "
-            android:textColor="#666666"
-            android:textSize="14sp" />
-    </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_person_pin_circle" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:gravity="center"
+                            android:text="My Map"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llay_Video"
+                        android:layout_width="103dp"
+                        android:layout_height="103dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bogoc2"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_video" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:gravity="center"
+                            android:text="Videos"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                    <LinearLayout
+                        android:id="@+id/llay_Imga"
+                        android:layout_width="103dp"
+                        android:layout_height="103dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bogoc2"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_photo_size_select_actual" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:gravity="center"
+                            android:text="Photos "
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="103dp"
+                        android:layout_height="103dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bogoc2"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintStart_toEndOf="@+id/llay_Video">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_video" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:gravity="center"
+                            android:text="Videos "
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llay_Drafts"
+                        android:layout_width="103dp"
+                        android:layout_height="103dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bogoc2"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toEndOf="@+id/llay_Video">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_drafts" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/ubuntu"
+                            android:gravity="center"
+                            android:text="Drafts "
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <LinearLayout
+                        android:layout_width="345dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bogoc2"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintVertical_bias="0.021">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="03"
+                                android:textColor="#82A0FA"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="JAN"
+                                android:textColor="#82A0FA"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="A slow but sure start."
+                                android:textColor="#666666"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="Tuesday, 11:30 AM"
+                                android:textColor="#9999"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="345dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bogoc2"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintVertical_bias="0.021">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="03"
+                                android:textColor="#82A0FA"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="JAN"
+                                android:textColor="#82A0FA"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="A slow but sure start."
+                                android:textColor="#666666"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu"
+                                android:text="Tuesday, 11:30 AM"
+                                android:textColor="#9999"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

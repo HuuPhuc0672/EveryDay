@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="208dp"
         android:src="@drawable/appicon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -21,12 +21,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="556dp"
+        android:layout_marginTop="588dp"
         android:fontFamily="@font/ubuntu_medium"
         android:text="E V R E Y D A Y"
         android:textColor="#666666"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

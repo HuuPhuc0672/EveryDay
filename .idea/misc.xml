@@ -7,20 +7,22 @@
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/drawable/bogoc.xml" value="0.172" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/drawable/bogoc2.xml" value="0.158" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/drawable/img_placeholder.xml" value="0.243" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/drawable/linear_backgroud.xml" value="0.1" />
+        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/drawable/profile.xml" value="0.1275" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_dang_ky.xml" value="0.264" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_dang_nhap.xml" value="0.2006340579710145" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_facebook.xml" value="0.25416666666666665" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_google.xml" value="0.1" />
-        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_hello.xml" value="0.4" />
-        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_main.xml" value="0.15789473684210525" />
+        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_hello.xml" value="0.2" />
+        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_login.xml" value="0.16" />
+        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_main.xml" value="0.18518518518518517" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_map.xml" value="0.12360688956433637" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/activity_photo.xml" value="0.12360688956433637" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/dilog_menu_them.xml" value="0.2" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/fragment_calendar.xml" value="0.264" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/fragment_discover.xml" value="0.264" />
-        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/fragment_everyday.xml" value="0.264" />
+        <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/fragment_everyday.xml" value="0.176" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/fragment_profile.xml" value="0.176" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/layout/item_nguoidung.xml" value="0.264" />
         <entry key="..\:/Exercise.TB/Practice/App1/app/src/main/res/menu/botton_nav_menu.xml" value="0.264" />
